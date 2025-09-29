@@ -1,16 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Exploring HTML Elements</title>
+<head>
+    <link rel="stylesheet" href="/docs/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exploring HTML Elements</title>
+
+    
+  <style>
+      p {
+          color: #8d359a;
+      }
+  </style>
 </head>
+
 <body>
+
+<main>
+
 <h1>Hello HTML World</h1>
 <hr>
 <p title="Did you mouse me?">Soon you will &hearts; HTML as much as I do!</p>
+<p>Another          paragraph here
+<p>And another!
+<p>I    r      e    a   l  l y like WHITESPACE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;don't you?</P>
+<pre>
+    What
+           about now?
+</pre>
 
+<p>This is fun isn't it?</p>
+Best day ever!
+<yes-sir>It complete is a <b>great</b> day for writing trashy HTML!</yes-sir>
+
+<!--using each of the tags-->
+<br>
+<br>
+<!-- no use for <base href=""> really and it gives errors -->
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a">documentation!</a>
+This is an <abbr>A</abbr>(abbreviation)
+<address><a href="mailto:christianwebb@sandiego.edu">contact me</a></address>
+<article class="gorilla-article">
+    <h2> challange: can you find the <b>hidden link</b> on the giraffe shown below?</h2>
+    <img src="https://wallpapers.com/images/high/giraffe-pictures-blb3owl99u881ele.webp" usemap="#gorilla" alt="giraffe">
+    
+    <map name="gorilla">
+        <area shape="circle" coords="300,300,80" href="https://en.wikipedia.org/wiki/Giraffe#/media/File:Giraffe_Mikumi_National_Park.jpg" alt="imagine a shape here">
+    </map>
+    <aside style="border: 2px solid gray; padding: 10px; background: #f9f9f9; width: fit-content;">
+        fun fact: the average male gorilla <b>weighs more than 100lbs!</b>
+    </aside>
+    <hr>
+    <h4>below is what sound a gorilla makes:</h4>
+    <audio controls src="assets/audio/gorilla.mp3"></audio>
+    
+    <blockquote cite="https://pixabay.com/sound-effects/search/gorilla/">*gorilla noises*</blockquote>
+    <br>
+    <button>press me to delete system32</button>
+    
+    <cite>website</cite>
+    <code>system.delete(system32)</code>
+    <data value="100">average weight of gorilla</data>
+    <datalist id="names-gorillas">
+        <option value="coco"></option>
+        <option value="fofo"></option>
+        <option value="lolo"></option>
+    </datalist>
+    
+    <dl>
+        <dt>The Gorilla-</dt>
+        <dd>A giant <del>owl-like</del> creature.</dd>
+    </dl>
+</article>
+
+<details>
+  <summary>Details</summary>
+  Gorillas are the largest <dfn id="creature">creatures</dfn> of all.
+</details>
+<!-- validator doesnt like command/commandfor because theyre deprecated! apparently nobody used them anymore after javascript beecame widespread -->
+<button command="show-modal" commandfor="gorilla-facts">Click me, you won't regret it!</button>
+<dialog id="gorilla-facts">Gorillas are large, primarily herbivorous,[1] great apes that live in the tropical forests of equatorial Africa. The genus Gorilla is divided into two species: the eastern gorilla and the western gorilla, and either four or five subspecies. The DNA of gorillas is highly similar to that of humans, from 96 to 99% depending on what is included, and they are the next closest living relatives to humans after the bonobos and chimpanzees.
+
+Gorillas are the largest living primates, reaching heights between 1.25 and 1.8 m (4 ft 1 in and 5 ft 11 in), weights between 100 and 270 kg (220 and 600 lb), and arm spans up to 2.6 m (8 ft 6 in), depending on species and sex. They tend to live in troops, with the leader being called a silverback. The eastern gorilla is distinguished from the western by darker fur colour and some other minor morphological differences. Gorillas tend to live 35–40 years in the wild.
+Gorillas' natural habitats cover tropical or subtropical forests in Sub-Saharan Africa. Although their range covers a small percentage of Sub-Saharan Africa, gorillas cover a wide range of elevations. The mountain gorilla inhabits the Albertine Rift montane cloud forests of the Virunga Volcanoes, ranging in altitude from 2,200 to 4,300 m (7,200 to 14,100 ft). Lowland gorillas live in dense forests and lowland swamps and marshes as low as sea level, with western lowland gorillas living in Central West African countries and eastern lowland gorillas living in the Democratic Republic of the Congo near its border with Rwanda.
+There are thought to be around 316,000 western gorillas in the wild, and 5,000 eastern gorillas. Both species are classified as Critically Endangered by the IUCN; all subspecies are classified as Critically Endangered with the exception of the mountain gorilla, which is classified as Endangered. There are many threats to their survival, such as poaching, habitat destruction, and disease, which threaten the survival of the species. However, conservation efforts have been successful in some areas where they live.
+The word gorilla comes from the history of Hanno the Navigator (c. 500 BC), a Carthaginian explorer on an expedition to the west African coast to the area that later became Sierra Leone.[2][3] Members of the expedition encountered "savage people, the greater part of whom were women, whose bodies were hairy, and whom our interpreters called Gorillae".[4][5] It is unknown whether what the explorers encountered were what we now call gorillas, another species of ape or monkeys, or humans.[6] Skins of gorillai women, brought back by Hanno, are reputed to have been kept at Carthage until Rome destroyed the city 350 years later at the end of the Punic Wars, 146 BC.
+In 1625 Andrew Battel mentioned the existence of the animal, under the name Pongo:
+This Pongo is in all proportion like a man, but... he is more like a Giant in stature, than a man: for he is very tall, [and] hath a man's face, hollow-eyed, with long haire vpon his browes. His face and eares are without haire, and his hands also. His bodie is full of haire, but not very thicke, and it is a dunnish colour. . . Hee goeth alwaies vpon his legs, and carrieth his hands clasped on the nape of his necke, when he goeth upon the ground... They goe many together, and kill many Negroes that trauaile in the Woods . . . Those Pongos are neuer taken aliue, because they are so strong, that ten men cannot hold one of them...— Andrew Battel, 1625[7]
+A century and a half after Battel's story was published, one writer called Radermacher wrote that "the large species, described by Buffon and other authors as of the size of a man, is held by many to be a Chimera."[8]
+The American physician and missionary Thomas Staughton Savage and naturalist Jeffries Wyman first described the western gorilla in 1847 from specimens obtained in Liberia.[9] They called it Troglodytes gorilla, using the then-current name of the chimpanzee genus. The species name was derived from Ancient Greek Γόριλλαι (gorillai)  'name of a tribe of hairy women',[10] as described by Hanno.
+----------------------------------
+<button commandfor="gorilla-facts" command="close">I confirm that I have read <em>all of the gorilla information</em></button>
+</dialog>
+<hr>
+
+<div>   
+    <figure>
+    
+    <img src="https://animalfactguide.com/wp-content/uploads/2024/12/giraffe-bush.jpg" width="1200" height="300" alt="gorilla-picture">
+    <figcaption>Here is a gorilla in its natural habitat</figcaption>
+    </figure>
+</div>
+<search>
+<form>
+    <h1><b> -- THIS FORM CONTAINS IMPORTANT INFO - PLEASE ANSWER HONESTLY --</b></h1>
+    <input type="password">
+    <label>Enter your favorite gorilla</label>
+    <output name="result"></output>
+</form>
+</search>
+
+<hgroup>
+    <h1> _end of survey_ </h1>
+</hgroup>
+
+<header>
+    Thank you for your honesty.
+</header>
+
+<hr>
+
+<i> your answers to the survey are probably being securely stored. please do not worry </i>
+
+<hr>
+<h3>please enjoy the newest version of minecraft</h3>
+<iframe title="iframe-test" width="400" height="300" src="https://classic.minecraft.net/"></iframe>
+
+<hr>
+
+<ins><p>++ gaming skills leevl up ++</p></ins>
+<fieldset>
+  <legend>To continue with webpage, please read the following:</legend>
+
+  There are thought to be around 316,000 western gorillas in the wild, and 5,000 eastern gorillas.
+</fieldset>
+<!-- kbd causes errors no matter what for some reason? <p>Please press <kdb>Alt</kbd> + <kbd>f4</kbd></p> -->
+
+
+
+<ul>
+    <li>why i like html</li>
+    <li>you</li>
+    <li>can</li>
+    <li>make</li>
+    <li>lists!</li>
+</ul>
+
+<menu>
+  <li><button id="save">Save for later</button></li>
+  <li><button id="share">(recommended) Share this important news</button></li>
+</menu>
+
+page completion 
+<meter id="completion-of-page" min="0" max="100" low="33" high="66" optimum="80" value="50">
+  at 50/100
+</meter>
+<hr>
+
+<noscript>
+<nav class="crumbs">current navigation:
+  <ol>
+    <li class="crumb">base</li>
+    <li class="crumb">animals</li>
+    <li class="crumb">gorilla page</li>
+  </ol>
+</nav>
+</noscript>
+
+<select id="gorilla">
+  <optgroup label="monkeys">
+    <option>monkey1</option>
+    <option>monkey2</option>
+    <option>monkey3</option>
+  </optgroup>
+  <optgroup label="nonmonkeys">
+    <option>gorilla</option>
+    <option>lemur</option>
+    <option>snake</option>
+  </optgroup>
+</select>
+
+<picture>
+    <source srcset="validation-fail.png" media="(orientation: portrait)">
+    <img src="assets/images/golira.jpg" width="1200" height="300" alt="gorilla">
+</picture>
+
+<pre>
+    - - - - - - - - - - - -
+     - - - - - - - - - - - 
+    - - - - - - - - - - - -
+     - - - - - - - - - - - 
+    - - - - - - - - - - - -
+     - - - - - - - - - - - 
+    - - - - - - - - - - - -
+     - - - - - - - - - - - 
+    - - - - - - - - - - - -
+     - - - - - - - - - - - 
+</pre>
+
+<hr>
+
+<section>
+  <h2>Welcome to the next section</h2>
+<label>Porgress through page:</label>
+<progress max="100" value="75"></progress>
+<br>
+<q cite="https://en.wikipedia.org/wiki/Gorilla">
+    In 1911, the <s>anthropologist</s> Albert Jenks noted the Bulu people's knowledge of gorilla behaviour and ecology, and their gorilla stories. In one such story, "The Gorilla and the Child", a gorilla speaks to people, seeking help and trust, and stealing a baby; a man accidentally kills the baby while attacking the gorilla.
+</q>
+<br>
+<ruby>
+  漢漢漢漢字字字字 <rp>(</rp><rt>kan</rt><rp>)</rp> 字字字字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
+<br><samp>You're getting close to the end. keep going!</samp><br>
+</section>
+
+<hr><br><br><br>
+<button id="dance-button">Click me to Dance</button>
+<script>
+  const btn = document.getElementById("dance-button");
+  let angle = 0, flying = false;
+
+  btn.addEventListener("click", () => {
+    if (flying) return;
+    flying = true;
+    const loop = () => {
+      angle = Math.max(angle * 1.01, 2);
+
+      btn.style.transform = `rotate(${angle}deg)`;
+
+      requestAnimationFrame(loop);
+    };
+    loop();
+  });
+</script>
+<br><br><br><hr>
+
+<small>
+    psst. psst. psst
+</small>
+
+<span class="myspan">this is myspan</span>
+<strong>this is some strong text</strong>
+
+<sub>This has been within my top </sub><sup>favorite labs so far</sup>
+
+<details>
+  <summary>
+    I have keys but no doors. I have space but no room. You can enter but can’t
+    leave. What am I?
+  </summary>
+  A gorilla
+</details>
+
+<template id="my-table-template">
+<table>
+    <caption>
+        this is a very tiny table
+    </caption>
+    <thead>
+    <tr>
+      <th scope="col">my</th>
+      <th scope="col">table</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">table</th>
+      <td>elbat</td>
+    </tr>
+    <tr>
+      <th scope="row">my</th>
+      <td>elbat</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row">table</th>
+      <td>elbat</td>
+    </tr>
+  </tfoot>
+
+</table>
+</template>
+
+<textarea rows="20" cols="10">
+  Gorillas are the largest living primates, reaching heights between 1.25 and 1.8 m (4 ft 1 in and 5 ft 11 in)
+  (written <time datetime="1999-07-07">July 7, 1999</time>)
+</textarea>
+
+<hr>
+
+<h3> Thank you for reading my <u>whole document</u> professor!<wbr> please watch <var>this video</var> I made as a reflection on this lab.</h3>
+
+<video controls src="assets/video/video-reflection.mp4">
+  <track
+    default
+    kind="captions"
+    src="assets/video/video-reflection.mp4"
+ >
+</video>
+
+<hr>
+<footer>
+    End of gorilla page
+</footer>
+
+
+</main>
 
 </body>
+
+
 </html>
